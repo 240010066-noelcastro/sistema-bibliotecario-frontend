@@ -1,0 +1,7 @@
+{
+  "name": "GestionBiblioteca_Frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

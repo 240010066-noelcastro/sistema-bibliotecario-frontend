@@ -1,0 +1,326 @@
+/* FONDO GENERAL */
+.dashboard-bg {
+  --background: #f8fafc;
+}
+
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.main-top-header {
+  padding: 30px 40px 10px 40px;
+  background: transparent;
+}
+
+.main-top-header h1 {
+  margin: 0;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icon { color: #582c83; } 
+.main-top-header p { margin: 5px 0 0 0; color: #666666; font-size: 14px; } 
+
+.section-subtitle {
+  margin: 15px 40px 15px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+/* TARJETAS DE KPIs */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+  padding: 0 40px 10px 40px;
+}
+
+.kpi-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.highlight-card { border-left: 4px solid #582c83; } 
+.highlight-card-blue { border-left: 4px solid #3b82f6; } 
+.highlight-card-green { border-left: 4px solid #10b981; } 
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+}
+
+.kpi-icon-wrapper {
+  min-width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.users-icon { background: #e0f2fe; color: #0ea5e9; }
+.staff-icon { background: #ecfdf5; color: #10b981; }
+.authors-icon { background: #f3e8ff; color: #8b5cf6; }
+.publishers-icon { background: #ffedd5; color: #f97316; }
+
+.total-icon { background: #f3e8ff; color: #7c3aed; }
+.books-icon { background: #eff6ff; color: #3b82f6; }
+.thesis-icon { background: #ecfdf5; color: #10b981; }
+.audiovisual-icon { background: #fef3c7; color: #f59e0b; }
+.magazine-icon { background: #fce7f3; color: #ec4899; }
+.loans-icon { background: #eff6ff; color: #3b82f6; }
+.cash-icon { background: #ecfdf5; color: #10b981; }
+
+.kpi-info { overflow: hidden; }
+.kpi-info h3 { margin: 0; font-size: 20px; font-weight: 800; color: #000000; }
+.kpi-info p {
+  margin: 2px 0 0 0; font-size: 11px; color: #666666; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+}
+
+/* GRÁFICAS */
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px 40px 40px 40px;
+}
+
+.chart-span-full { grid-column: 1 / -1; }
+
+.chart-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics-header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+
+.chart-title {
+  margin: 0 0 15px 0; font-size: 16px; font-weight: 800; color: #000000;
+}
+
+.period-selector {
+  display: flex; align-items: center; gap: 10px; font-size: 13px; color: #666666; font-weight: 500;
+}
+
+.period-selector select {
+  background-color: white; border: 1px solid #cbd5e1; padding: 6px 12px; border-radius: 6px;
+  font-size: 13px; font-weight: 600; color: #000000; outline: none; cursor: pointer; transition: 0.2s;
+}
+
+.period-selector select:hover { border-color: #582c83; }
+
+.chart-title-trend {
+  margin-bottom: 5px;
+}
+
+.chart-subtitle-trend {
+  margin: 0;
+  font-size: 12px;
+  color: #666666;
+}
+
+.chart-wrapper-large {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.chart-wrapper-standard {
+  width: 100%;
+  height: 280px;
+}
+
+/* =======================================================
+   ESTILOS PARA LOS COMPONENTES SVG DE RECHARTS
+   ======================================================= */
+
+.recharts-cartesian-axis-tick text {
+  fill: #666666;
+  font-size: 11px;
+}
+
+.recharts-cartesian-grid line {
+  stroke: #e5e7eb;
+}
+.recharts-cartesian-grid-horizontal line {
+  stroke-dasharray: 3 3;
+}
+
+.recharts-default-tooltip {
+  border-radius: 8px !important;
+  border: none !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+  background-color: #ffffff !important;
+}
+
+.recharts-legend-item-text {
+  font-size: 12px !important;
+  color: #000000 !important;
+}
+
+/* =========================================================
+   CARGADOR FIXED EN PANTALLA COMPLETA
+   ========================================================= */
+.main-loader-overlay { 
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0; 
+  background-color: rgba(255,255,255,0.8); 
+  z-index: 100000; 
+  display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 15px; 
+}
+.main-loader-spinner { width: 50px; height: 50px; border: 4px solid #f3f3f3; border-top: 4px solid #582c83; border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.main-loader-overlay p { color: #582c83; font-weight: 600; font-size: 16px; margin: 0; }
+
+/* =======================================================
+   REMOVER RECUADRO NEGRO DE SELECCIÓN EN LAS GRÁFICAS
+   ======================================================= */
+.recharts-wrapper,
+.recharts-surface,
+.recharts-responsive-container {
+  outline: none !important;
+  border: none !important;
+}
+
+.recharts-wrapper:focus,
+.recharts-surface:focus {
+  outline: none !important;
+}
+
+/* CONTENEDOR MAESTRO DEL BUSCADOR INDIVIDUAL */
+.dashboard-search-wrapper {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 2px 6px;
+  height: 40px; /* Un poco más compacto para que encaje bien en la gráfica */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.2s ease;
+}
+
+.dashboard-search-wrapper:focus-within {
+  border-color: #582c83;
+}
+
+/* INPUT DE FECHAS HÍBRIDO */
+.dashboard-date-input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000000;
+  padding: 0 8px;
+  width: 140px;
+  height: 100%;
+  background: transparent;
+}
+
+/* BOTONES INTEGRADOS AL BUSCADOR */
+.btn-switch-input, .btn-clear-date, .btn-search-date, .btn-bulb-help {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 6px;
+}
+
+.btn-switch-input ion-icon { color: #64748b; font-size: 18px; transition: 0.2s; }
+.btn-switch-input:hover ion-icon { color: #582c83; }
+
+.btn-clear-date ion-icon { color: #ef4444; font-size: 16px; }
+
+.btn-search-date ion-icon { color: white; font-size: 14px; }
+.btn-search-date {
+  background: #582c83;
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+  transition: opacity 0.2s;
+}
+.btn-search-date:hover { opacity: 0.9; }
+
+/* ESTILO DEL FOQUITO DE AYUDA */
+.btn-bulb-help ion-icon { color: #eab308; font-size: 20px; filter: drop-shadow(0 0 2px rgba(234, 179, 8, 0.2)); animation: pulseHelp 2s infinite; }
+.btn-bulb-help { margin-left: 5px; padding: 0 4px; }
+
+@keyframes pulseHelp {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+/* =========================================================
+   TOOLTIP MODAL INFORMATIVO (FOQUITO DE AYUDA COMPARTIDO)
+   ========================================================= */
+.help-tooltip-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 200000;
+  display: flex; justify-content: center; align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.help-tooltip-content {
+  background: white; padding: 25px; border-radius: 14px;
+  width: 90%; max-width: 520px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  animation: scaleInTooltip 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes scaleInTooltip {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.help-tooltip-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 15px; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px;
+}
+.help-tooltip-header h3 { margin: 0; color: #582c83; font-size: 18px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+.close-help-icon { color: #94a3b8; font-size: 24px; cursor: pointer; transition: 0.2s; }
+.close-help-icon:hover { color: #ef4444; }
+
+.help-tooltip-content p { color: #334155; font-size: 13.5px; line-height: 1.5; margin: 0 0 15px 0; }
+
+.help-tooltip-table { width: 100%; border-collapse: collapse; margin-bottom: 15px; font-size: 13px; }
+.help-tooltip-table th { background: #f8fafc; color: #475569; font-weight: 700; text-align: left; padding: 10px; border-bottom: 2px solid #e2e8f0; }
+.help-tooltip-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; color: #334155; vertical-align: middle; }
+
+.code-badge { background: #f1f5f9; color: #622599; font-family: monospace; padding: 3px 6px; border-radius: 4px; font-weight: bold; font-size: 12px; border: 1px solid #e2e8f0; }
+
+/* ESTILO DEL FOQUITO POR FUERA DE LA BARRA */
+.btn-bulb-help-outside { background: transparent; border: none; outline: none; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; margin-left: -5px; }
+.btn-bulb-help-outside ion-icon { color: #eab308; font-size: 24px; filter: drop-shadow(0 0 2px rgba(234, 179, 8, 0.2)); animation: pulseHelp 2s infinite; }

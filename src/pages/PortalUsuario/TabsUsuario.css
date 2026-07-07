@@ -1,0 +1,35 @@
+/* Color de fondo para todas las pantallas del portal */
+.portal-bg {
+  --background: #f9fafb;
+}
+
+/* Estilos de la barra inferior (Morado Institucional) */
+.portal-tab-bar {
+  background: #2b1442; 
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  height: 60px;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Estilo de los botones inactivos */
+.portal-tab-btn {
+  background: transparent;
+  color: #a78bfa; 
+  transition: color 0.3s ease;
+}
+
+/* Estilo del botón activo */
+.portal-tab-btn.tab-selected {
+  color: #ffffff; 
+  font-weight: bold;
+}
+
+.portal-tab-btn ion-icon {
+  font-size: 24px;
+  margin-bottom: 2px;
+}
+
+.portal-tab-btn ion-label {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}

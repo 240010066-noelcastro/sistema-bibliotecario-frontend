@@ -1,0 +1,377 @@
+/* FONDO GENERAL */
+.autores-bg {
+  --background: #f9fafb;
+}
+
+/* CONTENEDOR PRINCIPAL: Estructura fluida tipo Inventario/Editoriales */
+.autores-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* HEADER SUPERIOR */
+.header-autores {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px 40px 20px 40px;
+  background: #f9fafb;
+}
+
+.header-autores h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icon {
+  color: #582c83; /* MORADO UPVE */
+}
+
+.header-autores p {
+  margin: 5px 0 0 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-export {
+  --border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  height: 40px;
+}
+
+/* BOTONES PRINCIPALES FORZADOS A MORADO UPVE */
+.btn-nueva {
+  --background: #582c83 !important;
+  --color: white !important;
+  --border-radius: 8px;
+  --box-shadow: none !important;
+  font-weight: 600;
+  font-size: 13px;
+  height: 40px;
+}
+
+/* BUSCADOR STICKY */
+.searchbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #f9fafb;
+  padding: 10px 40px 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.searchbar-container ion-searchbar {
+  padding: 0;
+  --box-shadow: none;
+  --background: white;
+  --color: #111827;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  flex: 1;
+}
+
+/* BOTÓN DE BÚSQUEDA (LUPA) */
+.btn-buscar-lupa {
+  --border-radius: 10px;
+  --background: #582c83;
+  --color: white;
+  --box-shadow: none;
+  height: 42px;
+  margin: 0;
+}
+
+.results-count {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* TARJETA DEL FORMULARIO */
+.autores-form-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 25px 30px;
+  margin: 0 40px 20px 40px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  flex-shrink: 0;
+}
+
+.form-title {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  color: #582c83;
+  font-weight: 700;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 { flex: 1; min-width: 200px; }
+.flex-2 { flex: 2; min-width: 300px; }
+.align-bottom { justify-content: flex-end; margin-bottom: 2px;}
+
+.form-group label {
+  color: #582c83;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.custom-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+  background-color: white;
+}
+
+.custom-input:focus {
+  border-color: #582c83;
+  box-shadow: 0 0 0 3px rgba(88, 44, 131, 0.15);
+}
+
+.select-input {
+  cursor: pointer;
+  height: 45px;
+}
+
+.btn-guardar-inline {
+  background-color: #582c83 !important;
+  color: white !important;
+  border: none;
+  border-radius: 8px;
+  padding: 0 30px;
+  font-weight: 700;
+  height: 45px;
+  cursor: pointer;
+  min-width: 150px;
+  transition: background-color 0.2s;
+}
+
+.btn-guardar-inline:hover {
+  background-color: #3e1b5e !important;
+}
+
+/* TARJETA DE LA TABLA */
+.autores-table-card {
+  margin: 0 40px 40px 40px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabla-dinamica {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.tabla-dinamica th {
+  background: #582c83 !important;
+  color: white !important;
+  padding: 16px 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.tabla-dinamica td {
+  padding: 15px;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+  color: #374151;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px !important;
+  color: #6b7280 !important;
+  font-style: italic;
+}
+
+/* BOTONES DE ACCIÓN */
+.btn-action {
+  margin: 0 2px;
+  --border-radius: 6px;
+}
+
+.btn-edit {
+  --color: #582c83;
+  --background-hover: rgba(88, 44, 131, 0.1);
+}
+
+.btn-delete {
+  --color: #ef4444;
+  --background-hover: #fee2e2;
+}
+
+/* ESTILO PÍLDORA (BADGE) */
+.badge-tipo {
+  background-color: rgba(88, 44, 131, 0.1);
+  color: #582c83;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+/* ====================================================
+   BARRA DE PAGINACIÓN UPVE
+   ==================================================== */
+.footer-card { 
+  background: #f9fafb; 
+  padding: 15px 20px; 
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.total-registro-text {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-page {
+  background: white;
+  border: 1px solid #d1d5db;
+  color: #4b5563;
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-page:hover:not(:disabled) {
+  border-color: #582c83;
+  color: #582c83;
+}
+
+.btn-page.active {
+  background: #582c83;
+  color: white;
+  border-color: #582c83;
+}
+
+.btn-page-nav {
+  font-size: 18px;
+}
+
+.btn-page:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #f3f4f6;
+}
+
+/* =========================================================
+   NOTIFICACIONES TOAST Y LOADER FIXED EN PANTALLA COMPLETA
+   ========================================================= */
+.main-loader-overlay { 
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0; 
+  background-color: rgba(255,255,255,0.8); 
+  z-index: 100000; 
+  display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 15px; 
+}
+.main-loader-spinner { width: 50px; height: 50px; border: 4px solid #f3f3f3; border-top: 4px solid #582c83; border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.main-loader-overlay p { color: #582c83; font-weight: 600; font-size: 16px; margin: 0; }
+
+.toast-notification { position: fixed; top: 20px; right: 20px; background: white; padding: 15px 25px; border-radius: 8px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 14px; z-index: 10000; transform: translateX(120%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.toast-notification.show { transform: translateX(0); }
+.toast-notification.success { border-left: 5px solid #16a34a; color: #166534; }
+.toast-notification.success ion-icon { color: #16a34a; font-size: 24px; }
+.toast-notification.danger { border-left: 5px solid #ef4444; color: #991b1b; }
+.toast-notification.danger ion-icon { color: #ef4444; font-size: 24px; }
+
+/* ====================================================
+   VENTANA MODAL ELIMINAR / PDF
+   ==================================================== */
+.pdf-modal-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; z-index: 9999; backdrop-filter: blur(4px);
+}
+.pdf-modal-content {
+  background: white; padding: 30px; border-radius: 12px; width: 90%; max-width: 400px; text-align: center; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+}
+.pdf-modal-content h3 { margin: 0 0 10px 0; font-size: 20px; font-weight: 700; }
+.pdf-modal-content p { color: #4b5563; font-size: 14px; margin-bottom: 25px; line-height: 1.5; }
+.pdf-modal-actions { display: flex; flex-direction: column; gap: 10px; }
+.btn-pdf-img { background: #582c83; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: 0.2s; }
+.btn-pdf-img:hover { background: #3e1b5e; }
+.btn-pdf-text { background: #f3f4f6; color: #374151; border: 1px solid #d1d5db; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: 0.2s; }
+.btn-pdf-text:hover { background: #e5e7eb; }
+
+/* =========================================================
+   TOOLTIP MODAL INFORMATIVO (FOQUITO DE AYUDA)
+   ========================================================= */
+.btn-bulb-help { background: transparent; border: none; outline: none; cursor: pointer; display: flex; align-items: center; justify-content: center; height: 100%; padding: 0 10px; }
+.btn-bulb-help ion-icon { color: #eab308; font-size: 24px; filter: drop-shadow(0 0 2px rgba(234, 179, 8, 0.2)); animation: pulseHelp 2s infinite; }
+@keyframes pulseHelp { 0% { transform: scale(1); } 50% { transform: scale(1.06); } 100% { transform: scale(1); } }
+
+.help-tooltip-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 200000; display: flex; justify-content: center; align-items: center; backdrop-filter: blur(4px); }
+.help-tooltip-content { background: white; padding: 25px; border-radius: 14px; width: 95%; max-width: 600px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); animation: scaleInTooltip 0.2s cubic-bezier(0.16, 1, 0.3, 1); }
+@keyframes scaleInTooltip { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.help-tooltip-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; }
+.help-tooltip-header h3 { margin: 0; color: #582c83; font-size: 18px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+.close-help-icon { color: #94a3b8; font-size: 24px; cursor: pointer; transition: 0.2s; }
+.close-help-icon:hover { color: #ef4444; }
+.help-tooltip-content p { color: #334155; font-size: 13.5px; line-height: 1.5; margin: 0 0 10px 0; }
+
+/* TABLA EXPLICATIVA DEL TOOLTIP */
+.help-tooltip-table { width: 100%; border-collapse: collapse; margin-bottom: 10px; font-size: 13px; }
+.help-tooltip-table th { background: #f8fafc; color: #475569; font-weight: 700; text-align: left; padding: 10px; border-bottom: 2px solid #e2e8f0; }
+.help-tooltip-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; color: #334155; vertical-align: middle; text-align: left;}
+.code-badge { background: #f1f5f9; color: #622599; font-family: monospace; padding: 3px 6px; border-radius: 4px; font-weight: bold; font-size: 12px; border: 1px solid #e2e8f0; }

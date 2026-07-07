@@ -1,0 +1,404 @@
+/* ==========================================================================
+   🏛️ ESTILOS MÓDULO: DETALLE RECURSO (FORMATO UNIFICADO AL 100%)
+   ========================================================================== */
+.cervantes-content-bg {
+  --background: #f8fafc; /* Fondo gris perimetral marcado */
+  background-color: #f8fafc;
+}
+
+/* NAVBAR MORADO OFICIAL */
+.premium-navbar {
+  background-color: #582c83; 
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-self: start;
+}
+
+.navbar-back-arrow-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 14px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.navbar-back-arrow-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.university-logo-text {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.university-brand-sub {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  font-size: 12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 8px;
+}
+
+.navbar-center-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-self: center;
+}
+
+.nav-top-link {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-top-link:hover {
+  color: #ffffff;
+}
+
+.navbar-right {
+  justify-self: end;
+}
+
+/* ENCUADRE GLOBAL DE LA FICHA */
+.cervantes-layout-wrapper {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cervantes-main-card {
+  width: 100%;
+  max-width: 1050px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 2px solid #cbd5e1; 
+  padding: 40px;
+  display: flex;
+  gap: 50px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+}
+
+/* COLUMNA IZQUIERDA */
+.cervantes-col-left {
+  width: 250px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cervantes-image-wrapper {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+  border: 1px solid #cbd5e1;
+}
+
+.cervantes-book-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cervantes-fallback-frame {
+  width: 100%;
+  height: 340px;
+  background: linear-gradient(135deg, #582c83 0%, #29143d 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 52px;
+}
+
+.cervantes-fallback-frame span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.cervantes-text-caption-physical {
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.btn-cervantes-digital {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-cervantes-digital:hover { transform: translateY(-1px); }
+.dynamic-bg-verde { background-color: #10b981; }
+.dynamic-bg-verde:hover { background-color: #059669; }
+.dynamic-bg-azul { background-color: #0057b7; }
+.dynamic-bg-azul:hover { background-color: #00418a; }
+
+/* COLUMNA DERECHA */
+.cervantes-col-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cervantes-main-title-text {
+  font-size: 26px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.cervantes-title-divider {
+  height: 2px;
+  background-color: #f1f5f9;
+}
+
+/* 🏛️ LA GRAN TARJETA MAESTRA UNIFICADA */
+.cervantes-section-group-card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1; 
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.group-card-title {
+  margin: 0;
+  background-color: #f8fafc;
+  padding: 14px 20px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #582c83; /* Morado UPVE */
+  border-bottom: 1px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.group-card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cervantes-meta-row {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.5;
+  display: flex;
+}
+
+.cervantes-label {
+  font-weight: 700;
+  color: #4b5563;
+  width: 195px;
+  flex-shrink: 0;
+}
+
+.cervantes-value {
+  color: #111827;
+  font-weight: 500;
+}
+
+.cervantes-value.text-purple-type {
+  color: #582c83;
+  font-weight: 700;
+}
+
+.cervantes-value.text-link-style {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+/* BLOQUES DE TEXTO INTERNOS DENTRO DE LA TARJETA */
+.single-card-inner-text-block {
+  margin-top: 15px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Separador sutil punteado para las observaciones */
+.border-top-dashed {
+  border-top: 1px dashed #cbd5e1;
+}
+
+.inner-block-subtitle {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.inner-block-subtitle ion-icon {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.cervantes-paragraph-justified {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+}
+
+.text-main-synopsis {
+  color: #1f2937;
+}
+
+.text-main-observations {
+  color: #475569;
+  font-style: italic;
+}
+
+/* BADGE COMPLEMENTARIO INFERIOR */
+.cervantes-footer-info-badge {
+  background-color: rgba(88, 44, 131, 0.03);
+  border: 1px dashed #582c83;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12.5px;
+  color: #514b5c;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.cervantes-footer-info-badge ion-icon {
+  font-size: 22px;
+  color: #582c83;
+  flex-shrink: 0;
+}
+
+/* MODAL INTERCEPTOR */
+.cervantes-modal-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5);
+  display: flex; justify-content: center; align-items: center; backdrop-filter: blur(4px); z-index: 100000;
+}
+.cervantes-modal-content {
+  background: #ffffff; padding: 25px; border-radius: 12px; width: 90%; max-width: 440px; text-align: center;
+  border: 1px solid #cbd5e1; box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.cervantes-modal-content h3 { margin: 0 0 12px 0; color: #582c83; font-size: 18px; font-weight: 700; }
+.cervantes-modal-content p { color: #4b5563; font-size: 14px; line-height: 1.5; margin-bottom: 22px; text-align: justify; }
+.cervantes-modal-actions { display: flex; justify-content: center; gap: 12px; }
+.btn-cervantes-modal-no { background: #f3f4f6; color: #374151; border: 1px solid #cbd5e1; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; }
+.btn-cervantes-modal-yes { background: #582c83; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; }
+
+/* LOADERS */
+.cervantes-loader-container {
+  display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; gap: 15px; background: #ffffff;
+}
+.cervantes-spinner {
+  width: 45px; height: 45px; border: 4px solid #f3f3f3; border-top: 4px solid #582c83; border-radius: 50%; animation: cSpin 1s linear infinite;
+}
+@keyframes cSpin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.btn-cervantes-back-error {
+  background-color: #582c83; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;
+}
+
+/* ==========================================================================
+   📊 INSIGNIAS DE DISPONIBILIDAD DE INVENTARIO EN TIEMPO REAL (UPVE)
+   ========================================================================== */
+.real-inventory-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Estado 1: Físico + Digital */
+.badge-both {
+  background-color: #f0fdf4;
+  color: #15803d;
+  border-color: #bbf7d0;
+}
+.dot-green { background-color: #22c55e; box-shadow: 0 0 6px #22c55e; }
+
+/* Estado 2: Solo Digital (Inventario Agotado) */
+.badge-digital-only {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+.dot-blue { background-color: #3b82f6; box-shadow: 0 0 6px #3b82f6; }
+
+/* Estado 3: Solo Físico */
+.badge-physical-only {
+  background-color: #fdf4ff;
+  color: #701a75;
+  border-color: #f5d0fe;
+}
+.dot-purple { background-color: #a855f7; box-shadow: 0 0 6px #a855f7; }
+
+/* Estado 4: Totalmente Agotado */
+.badge-empty {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border-color: #fecaca;
+}
+.dot-red { background-color: #ef4444; box-shadow: 0 0 6px #ef4444; }
